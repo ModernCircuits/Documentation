@@ -18,12 +18,15 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Modern Circuits'
-copyright = '2021, Modern Circuits UG (haftungsbeschraenkt)'
+copyright = '2020 - 2021, Modern Circuits UG (haftungsbeschraenkt)'
 author = 'Modern Circuits UG (haftungsbeschraenkt)'
 
 
 # -- General configuration ---------------------------------------------------
-
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
