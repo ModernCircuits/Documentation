@@ -1,5 +1,8 @@
 sphinx
 myst-parser
 sphinx-rtd-theme
+furo
+sphinx-redactor-theme
+sphinx-sizzle-theme
 
 autopep8

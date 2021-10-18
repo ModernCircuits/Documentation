@@ -14,6 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+# import sphinx_redactor_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -33,6 +34,7 @@ source_suffix = {
 extensions = [
     'sphinx_rtd_theme',
     'myst_parser',
+    # 'sphinx_book_theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -42,15 +44,18 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
+trim_footnote_reference_space = True
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
+# html_theme = 'furo'
 # html_theme = 'alabaster'
 html_theme = "sphinx_rtd_theme"
+
+# html_theme = 'sphinx_redactor_theme'
+# html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -60,12 +65,12 @@ html_static_path = ['_static']
 html_theme_options = {
     # 'analytics_id': 'G-XXXXXXXXXX',  # Provided by Google in your dashboard
     # 'analytics_anonymize_ip': False,
-    # 'logo_only': False,
+    'logo_only': True,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    # 'style_nav_header_background': 'white',
+    'style_nav_header_background': '#222',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
@@ -73,3 +78,5 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False
 }
+
+html_logo = '_static/img/logo_full_white_small.png'
