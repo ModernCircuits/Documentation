@@ -1,5 +1,9 @@
 # Modulation
 
+```{literalinclude} snippets/test.cpp
+:language: cpp
+```
+
 ## LFO
 
 |  Control  |               Range                | Description |
