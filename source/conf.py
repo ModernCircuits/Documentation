@@ -19,7 +19,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Modern Circuits'
-copyright = '2020 - 2021, Modern Circuits UG (haftungsbeschraenkt)'
+copyright = '2022, Modern Circuits UG (haftungsbeschraenkt)'
 author = 'Modern Circuits UG (haftungsbeschraenkt)'
 
 
