@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tone &mdash; Modern Circuits  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Filter" href="space.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #222" >
+            <a href="../index.html">
+            <img src="../_static/logo_full_white_small.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Zentrale/index.html">Zentrale</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ASIC</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modulation.html">Modulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic.html">Dynamic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space.html">Filter</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tone</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-top-bar-stuff-kommt-hierher">“General Top Bar Stuff kommt hierher”</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #222" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Modern Circuits</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">ASIC</a> &raquo;</li>
+      <li>Tone</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ASIC/tone.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tone">
+<h1>Tone<a class="headerlink" href="#tone" title="Permalink to this heading"></a></h1>
+<p>The ASIC Tone PlugIn is a digital audio effect for technically adjusting an atonal audio signal using a filter bank. It can be interpreted as a frequency-based tuner and influences the linear or natural harmonic spectrum. In this tutorial you will learn which functions the ASIC Tone audio effect has and how to use them.</p>
+<p>On our website modern-circuits.com you will find the manuals of all ASIC PlugIns on the “Support” page as well as separate manuals for the installation and the modulation matrix.</p>
+<p>Usage:
+ASIC Tone can be used to quickly edit frequency bands that belong together. The basis is either a diatonic note or a freely selectable fundamental frequency. Based on this base, the plug-in calculates the associated harmonics and automatically sets filter bands. These can be changed by the Main UI in their volume, their Q-factor and their number.</p>
+<p>Specs
+Value
+Root Note
+lowest: F-1; highest: E8
+Oktaven
+8
+Resolution
+up to 20 Bands
+Overtone scale
+natural, linear</p>
+<p>Top Bar
+VLCD
+MAIN UI</p>
+<section id="general-top-bar-stuff-kommt-hierher">
+<h2>“General Top Bar Stuff kommt hierher”<a class="headerlink" href="#general-top-bar-stuff-kommt-hierher" title="Permalink to this heading"></a></h2>
+<p>02 VLCD
+Der VLCD zeigt den aktuellen Status des PlugIns oder das aktuelle Bearbeitungsmenü.</p>
+<p>Seite VLCD
+Beschreibung</p>
+<p>Audio FX - Diese Seite zeigt den aktuellen Status des Effekts. Grundlage ist ein Frequenzspektrum von 20Hz bis 20kHz. Das Frequenzspektrum den Ankommenden Signals wird in Echtzeit dargestellt.
+Die vertikalen Balken stehen hier für die Frequenzbereiche, die vom PlugIn bearbeitet werden. Sie stellen die Bänder dar.
+Die mittigen Kegel stehen zur individuellen Verstärkung und Abschwächung pro Band zur verfügung.
+Anzahl und Position der Bänder lässt sich über das Main UI Kontrollieren.
+Auf dieser VLCD Seite kann das Arbeiten durch eine Zoom Funktion detailliert werden, sowie alle Bänder im Gain zurückgesetzt werden.</p>
+<p>Preset Seite - Diese Seit zeigt alle verfügbaren Presets an. In der linken Spalte steht der Name, auf der rechten Seite der Name der übergeordneten Bank. Im oberen Teil befinden sich zwei Symbole. Mit dem Herz-Symbol können Presets als Favorit markiert werden. Das Symbol mit den sich kreuzenden Pfeilen aktiviert einen Shuffle Modus.</p>
+<p>Sidechain Input - Auf dieser Seite wird das ankommende Sidechain Signal editiert. Zur verfügung stehen dafür ein Gain/Attenuator sowie ein Filter mit High-/Lowcut und Peak.</p>
+<p>Einstellungen - Hier befinden sich die Einstellungen des PlugIns.</p>
+<p>Envelope Modulator - Auf dieser Seite kann ein Envelope als Modulator für einen Parameter auf dem Main UI konfiguriert werden. Mehr Informationen darüber sind auf morder-circuits.com/support/modualtion-manual verfügbar.</p>
+<p>LFO Modulator - Auf dieser Seite kann ein LFO als Modulator für einen Parameter auf dem Main UI konfiguriert werden. Mehr Informationen darüber sind auf morder-circuits.com/support/modualtion-manual verfügbar.</p>
+<p>Sequenzer Modulator - Auf dieser Seite kann ein Sequenzer als Modulator für einen Parameter auf dem Main UI konfiguriert werden. Mehr Informationen darüber sind auf morder-circuits.com/support/modualtion-manual verfügbar.</p>
+<p>03 Main UI</p>
+<p>Parameter
+Funktion
+Note/Frequency
+This is the basis of the plug-in’s processing. Note describes the frequency of one of the 12 tones from F - E. Frequency cancels the scaling in diatonic frequencies and lets you freely determine any frequency.
+Intensity
+Here the gain of all generated bands is controlled. Here it can be amplified but also lowered.
+Mode
+Here there is the possibility to switch between a linear and the natural overtone spectrum.
+Clarity
+Clarity edits the quality of the individual bands.
+Resolution
+This sets the number of overtones that match the root note.
+Octave
+Here the root note can be shifted in the octave.
+Dry/Wet
+Here the ratio of the processed signal with the original signal is processed.</p>
+<p>We hope we could make the ASIC Dynamic PlugIn understandable with this documentation. Further information is available in our FAQ at modern-circuits.com/support. Here you can also find email addresses to contact us.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="space.html" class="btn btn-neutral float-left" title="Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Modern Circuits UG (haftungsbeschraenkt).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
