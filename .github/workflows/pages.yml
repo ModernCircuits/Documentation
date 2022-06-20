@@ -1,11 +1,20 @@
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
 jobs:
   build:
-    name: Push Sphinx Pages
+    name: Build HTML
     runs-on: ubuntu-latest
     steps:
-      - uses: seanzhengw/sphinx-pages@master
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run html build
+        run: make html
+
+      - name: Deploy to GH-Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          create_readme: true
+          branch: gh-pages
+          folder: build/html
