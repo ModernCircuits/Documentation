@@ -4,7 +4,8 @@ The ASIC Space PlugIn is a digital audio effect for creating artificial space, r
 
 On our website modern-circuits.com under "Support" you will find the manuals of all ASIC PlugIns as well as separate manuals for installation and the modulation matrix.
 
-Application:
+**Usage:**
+
 With the ASIC Space an artificial spatiality can be created and added to the original singal. The processing is divided between the Reverb and Delay effects. The subdivision is shown in color: Blue represents the Delay, purple the Reverb. The Main UI can be used to adjust these effects to the input signal and mix.
 
 ```{image} https://modern-circuits.com/static/media/asic_space_screenshot_small.5fe1d80d17742b965fd5.png
