@@ -19,7 +19,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run html build
-        run: make html
+        run: |
+          make html
+          touch build/html/.nojekyll
 
       - name: Deploy to GH-Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
