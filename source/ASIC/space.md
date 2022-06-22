@@ -41,21 +41,21 @@ The VLCD shows the current status of the PlugIn or the current edit menu.
 
 ## Main UI
 
-- **Delay Time Left:** Setting of the delay time for the left side of the stereo delay in milliseconds. |
-- **Delay Time Right:** Setting of the delay time for the right side of the stereo delay in milliseconds. |
-- **Sync:** Synchronize the delay time with the BPM of the host DAW. This changes the unit of the delay time from milliseconds to relative clock units. |
-- **L/R Link:** Link the parameters "Delay Time Left" and "Delay Time Right". This way both parameters act synchronously, no matter which one you press. |
-- **Cutoff:** Adjust the cutoff frequency of the filter of the delay signal. Available are Low Cut, High Cut and Peak Filter - adjustable via the VLCD. |
-- **Feedback:** The feedback indicates what percentage of the signal from the last delay cycle is included in the next one. |
-- **Delay Dry/Wet:** Here you can adjust the ratio of the original and the pure delay signal. |
-- **Delay Mute:** Here you can remove the delay effect from the signal chain. |
-- **Blend:** With this slider you can mix the proportion of the two effects in the output signal. |
-- **Size:** Here you can set the size and reverberation time of the reverb. |
-- **Predelay:** Adjust the time until the onset of the first early reflections. |
-- **Damp:** Here you can set the absorption coefficient of high frequencies in the simulated room. The higher the value, the higher the absorption value. |
-- **HP Filter:** Filter the low frequencies from the reverb |
-- **LP Filter:** Filter the high frequencies from the reverb |
-- **Reverb Dry/Wet:** Filter the high frequencies from the reverb |
-- **Reverb Mute:** Here you can remove the reverb effect from the signal chain. |
+- **Delay Time Left:** Setting of the delay time for the left side of the stereo delay in milliseconds.
+- **Delay Time Right:** Setting of the delay time for the right side of the stereo delay in milliseconds.
+- **Sync:** Synchronize the delay time with the BPM of the host DAW. This changes the unit of the delay time from milliseconds to relative clock units.
+- **L/R Link:** Link the parameters "Delay Time Left" and "Delay Time Right". This way both parameters act synchronously, no matter which one you press.
+- **Cutoff:** Adjust the cutoff frequency of the filter of the delay signal. Available are Low Cut, High Cut and Peak Filter - adjustable via the VLCD.
+- **Feedback:** The feedback indicates what percentage of the signal from the last delay cycle is included in the next one.
+- **Delay Dry/Wet:** Here you can adjust the ratio of the original and the pure delay signal.
+- **Delay Mute:** Here you can remove the delay effect from the signal chain.
+- **Blend:** With this slider you can mix the proportion of the two effects in the output signal.
+- **Size:** Here you can set the size and reverberation time of the reverb.
+- **Predelay:** Adjust the time until the onset of the first early reflections.
+- **Damp:** Here you can set the absorption coefficient of high frequencies in the simulated room. The higher the value, the higher the absorption value.
+- **HP Filter:** Filter the low frequencies from the reverb.
+- **LP Filter:** Filter the high frequencies from the reverb.
+- **Reverb Dry/Wet:** Filter the high frequencies from the reverb.
+- **Reverb Mute:** Here you can remove the reverb effect from the signal chain.
 
 We hope we could make the ASIC Space PlugIn understandable with this documentation. Further information is available in our FAQ at [modern-circuits.com/support](https://modern-circuits.com/support). Here you can also find email addresses to contact us.
