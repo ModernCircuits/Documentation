@@ -4,7 +4,8 @@ The ASIC Shape PlugIn is a digital audio effect for creating artificial harmonic
 
 On our website modern-circuits.com you will find the manuals of **all ASIC PlugIns** on the "Support" page as well as separate manuals for the installation and the modulation matrix.
 
-Usage:
+**Usage:**
+
 The ASIC Shape can be used to artificially distort a signal. To make the processing as detailed as possible, various processing tools are available. Besides the selection of one of the 10 algorithms, two filters, an envelope follower and a transient designer are available. These effects can be adjusted to the input signal and the mix via the Main UI.
 
 ```{image} https://modern-circuits.com/static/media/asic_shape_screenshot_small.803961c9dbc798e8ce75.png
