@@ -1,0 +1,45 @@
+The Top Bar has various functions. The following table lists the
+controls available on the user interface from left to right.
+
+Input Volume
+   This slider controls the volume of the signal coming from the DAW.
+   The arrow on the outside marks the current status and the level meter
+   visualizes the peaks.
+
+Presets
+   Use this button to access the predefined effect settings. The icon on
+   the left side opens an extensive list, the name of the current preset
+   is in the middle and the arrow keys on the right side allow you to
+   quickly switch between presets.
+
+Bypass
+   The colored logo of the plug-in is also a bypass button to disable
+   the effect in the signal chain.
+
+Undo/Redo
+   With these buttons the last step can be undone and an undone step can
+   be restored.
+
+Save Preset
+   Über diesen Knopf können eigene/individuelle Presets gespeichert
+   werden.
+
+Settings
+   Here you can find the technical settings to personalize the software.
+
+Sidechain Input
+   All plug-ins of the ASIC Bundle have an additional audio input for a
+   sidechain signal. This button takes you to the input processing of
+   this signal.
+
+Modulation
+   The modulation matrix of the ASIC bundle is accessible via this menu.
+   Three different modulators are available, which can be placed on
+   parameters in the main UI by drag'n'drop. Detailed information about
+   the modulators can be found at modern-circuits.com/support.
+
+Output Volumen
+   After the signal has been processed by the audio effect, this slider
+   allows you to adjust the volume that the plug-in sends back to the
+   DAW. It works identically to the input volume slider, but at the
+   other end of the signal flow.
