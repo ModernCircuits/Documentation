@@ -76,7 +76,7 @@
           <li><a href="index.html">ASIC</a> &raquo;</li>
       <li>Modulation</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/ASIC/modulation.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/ASIC/modulation.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -86,39 +86,46 @@
              
   <section id="modulation">
 <h1>Modulation<a class="headerlink" href="#modulation" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#lfo" id="id1">LFO</a></p></li>
+<li><p><a class="reference internal" href="#seq" id="id2">SEQ</a></p></li>
+<li><p><a class="reference internal" href="#trigger-section" id="id3">Trigger Section</a></p></li>
+</ul>
+</nav>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// foo</span>
 <span class="k">auto</span> <span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
 </pre></div>
 </div>
 <section id="lfo">
-<h2>LFO<a class="headerlink" href="#lfo" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">LFO</a><a class="headerlink" href="#lfo" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Control</p></th>
-<th class="head text-center"><p>Range</p></th>
-<th class="head text-center"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Shape</p></td>
-<td class="text-center"><p>Sine, Square, Saw, Triangle, Noise</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Shape</p></td>
+<td><p>Sine, Square, Saw, Triangle, Noise</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Width</p></td>
-<td class="text-center"><p>0 - 100%</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-odd"><td><p>Width</p></td>
+<td><p>0 - 100%</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Frequency</p></td>
-<td class="text-center"><p>0.01Hz - 20Hz</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Frequency</p></td>
+<td><p>0.01Hz - 20Hz</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Stop</p></td>
-<td class="text-center"><p>0 - 1000 ms</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-odd"><td><p>Stop</p></td>
+<td><p>0 - 1000 ms</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Fade</p></td>
-<td class="text-center"><p>0 - 1000 ms</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Fade</p></td>
+<td><p>0 - 1000 ms</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -128,68 +135,73 @@
 </div>
 </section>
 <section id="seq">
-<h2>SEQ<a class="headerlink" href="#seq" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">SEQ</a><a class="headerlink" href="#seq" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Control</p></th>
-<th class="head text-center"><p>Range</p></th>
-<th class="head text-center"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Sync</p></td>
-<td class="text-center"><p>Off, On</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Sync</p></td>
+<td><p>Off, On</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Rate</p></td>
-<td class="text-center"><p>1 - 1000ms</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-odd"><td><p>Rate</p></td>
+<td><p>1 - 1000ms</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Multiply</p></td>
-<td class="text-center"><p>0.5, 1, 2, 4</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Multiply</p></td>
+<td><p>0.5, 1, 2, 4</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Mode</p></td>
-<td class="text-center"><p>Normal, Reverse</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-odd"><td><p>Mode</p></td>
+<td><p>Normal,
+Reverse</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Smooth</p></td>
-<td class="text-center"><p>0 - 100%</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Smooth</p></td>
+<td><p>0 - 100%</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="trigger-section">
-<h2>Trigger Section<a class="headerlink" href="#trigger-section" title="Permalink to this heading"></a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt sem non metus ultricies aliquam. Duis in magna varius, accumsan mi ut, mollis dui. Maecenas scelerisque vel massa at pulvinar. Aliquam tempus arcu eu ex pulvinar rutrum. Quisque at varius felis. Phasellus pulvinar euismod placerat. Praesent id placerat arcu, vitae condimentum ante.</p>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Trigger Section</a><a class="headerlink" href="#trigger-section" title="Permalink to this heading"></a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt
+sem non metus ultricies aliquam. Duis in magna varius, accumsan mi ut,
+mollis dui. Maecenas scelerisque vel massa at pulvinar. Aliquam tempus
+arcu eu ex pulvinar rutrum. Quisque at varius felis. Phasellus pulvinar
+euismod placerat. Praesent id placerat arcu, vitae condimentum ante.</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Control</p></th>
-<th class="head text-center"><p>Range</p></th>
-<th class="head text-center"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Oneshot</p></td>
-<td class="text-center"><p></p></td>
-<td class="text-center"><p>Restart modulator once</p></td>
+<tr class="row-even"><td><p>Oneshot</p></td>
+<td></td>
+<td><p>Restart modulator once</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Free</p></td>
-<td class="text-center"><p>0 - 1000 ms</p></td>
-<td class="text-center"><p>Restart modulator every N seconds</p></td>
+<tr class="row-odd"><td><p>Free</p></td>
+<td><p>0 - 1000 ms</p></td>
+<td><p>Restart modulator every N seconds</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Timecode</p></td>
-<td class="text-center"><p>1/16 - 16</p></td>
-<td class="text-center"><p>Restart modulator every N bars</p></td>
+<tr class="row-even"><td><p>Timecode</p></td>
+<td><p>1/16 - 16</p></td>
+<td><p>Restart modulator every N bars</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Input</p></td>
-<td class="text-center"><p>0 - 100 %</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-odd"><td><p>Input</p></td>
+<td><p>0 - 100 %</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Side-Chain</p></td>
-<td class="text-center"><p>0 - 100 %</p></td>
-<td class="text-center"><p></p></td>
+<tr class="row-even"><td><p>Side-Chain</p></td>
+<td><p>0 - 100 %</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>

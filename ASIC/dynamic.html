@@ -46,6 +46,7 @@
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modulation.html">Modulation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Dynamic</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#top-bar">Top Bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vlcd">VLCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#main-ui">Main UI</a></li>
@@ -77,7 +78,7 @@
           <li><a href="index.html">ASIC</a> &raquo;</li>
       <li>Dynamic</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/ASIC/dynamic.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/ASIC/dynamic.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -87,93 +88,169 @@
              
   <section id="dynamic">
 <h1>Dynamic<a class="headerlink" href="#dynamic" title="Permalink to this heading"></a></h1>
-<p>The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and dynamic range of an audio signal. It combines the traditional audio effects compressor and expander. In this manual you will learn about the functions of the ASIC Dynamic Audio Effect and how to use them.</p>
-<p>On our website modern-circuits.com you will find the manuals of all ASIC PlugIns on the “Support” page as well as separate manuals for the installation and the modulation matrix.</p>
-<p><strong>Usage:</strong></p>
-<p>The ASIC Dynamic PlugIn is a combination of a compressor and an expander, both controllable via the same user interface. The VLCD graphically displays the current and past compression level. A display shows the gain reduction in decibels (dB). With a click on the expander button in the VLCD, the expander can be operated in the main UI. At the output, an auto gain function is available to balance the level. There is also a sidechain function.</p>
-<img alt="ASIC Dynamic Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png" />
-<section id="top-bar">
-<h2>Top Bar<a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
-<p>The Top Bar has various functions. The following table lists the controls available on the user interface from left to right.</p>
+<nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><strong>Input Volume</strong> - This slider controls the volume of the signal coming from the DAW. The arrow on the outside marks the current status and the level meter visualizes the peaks.</p></li>
-<li><p><strong>Presets</strong> - Use this button to access the predefined effect settings. The icon on the left side opens an extensive list, the name of the current preset is in the middle and the arrow keys on the right side allow you to quickly switch between presets.</p></li>
-<li><p><strong>Bypass</strong> - The colored logo of the plug-in is also a bypass button to disable the effect in the signal chain.</p></li>
-<li><p><strong>Undo/Redo</strong> - With these buttons the last step can be undone and an undone step can be restored.</p></li>
-<li><p><strong>Save Preset</strong> - Über diesen Knopf können eigene/individuelle Presets gespeichert werden.</p></li>
-<li><p><strong>Settings</strong> - Here you can find the technical settings to personalize the software.</p></li>
-<li><p><strong>Sidechain Input</strong> - All plug-ins of the ASIC Bundle have an additional audio input for a sidechain signal. This button takes you to the input processing of this signal.</p></li>
-<li><p><strong>Modulation</strong> - The modulation matrix of the ASIC bundle is accessible via this menu. Three different modulators are available, which can be placed on parameters in the main UI by drag’n’drop. Detailed information about the modulators can be found at modern-circuits.com/support.</p></li>
-<li><p><strong>Output Volumen</strong> - After the signal has been processed by the audio effect, this slider allows you to adjust the volume that the plug-in sends back to the DAW. It works identically to the input volume slider, but at the other end of the signal flow.</p></li>
+<li><p><a class="reference internal" href="#usage" id="id1">Usage</a></p></li>
+<li><p><a class="reference internal" href="#top-bar" id="id2">Top Bar</a></p></li>
+<li><p><a class="reference internal" href="#vlcd" id="id3">VLCD</a></p></li>
+<li><p><a class="reference internal" href="#main-ui" id="id4">Main UI</a></p></li>
+<li><p><a class="reference internal" href="#additional-resources" id="id5">Additional Resources</a></p></li>
 </ul>
+</nav>
+<p>The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and
+dynamic range of an audio signal. It combines the traditional audio
+effects compressor and expander. In this manual you will learn about the
+functions of the ASIC Dynamic Audio Effect and how to use them.</p>
+<p>On our website modern-circuits.com you will find the manuals of all ASIC
+PlugIns on the “Support” page as well as separate manuals for the
+installation and the modulation matrix.</p>
+<img alt="ASIC Dynamic Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png" />
+<section id="usage">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<p>The ASIC Dynamic PlugIn is a combination of a compressor and an
+expander, both controllable via the same user interface. The VLCD
+graphically displays the current and past compression level. A display
+shows the gain reduction in decibels (dB). With a click on the expander
+button in the VLCD, the expander can be operated in the main UI. At the
+output, an auto gain function is available to balance the level. There
+is also a sidechain function.</p>
+</section>
+<section id="top-bar">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Top Bar</a><a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
+<p>The Top Bar has various functions. The following table lists the
+controls available on the user interface from left to right.</p>
+<dl class="simple">
+<dt>Input Volume</dt><dd><p>This slider controls the volume of the signal coming from the DAW.
+The arrow on the outside marks the current status and the level meter
+visualizes the peaks.</p>
+</dd>
+<dt>Presets</dt><dd><p>Use this button to access the predefined effect settings. The icon on
+the left side opens an extensive list, the name of the current preset
+is in the middle and the arrow keys on the right side allow you to
+quickly switch between presets.</p>
+</dd>
+<dt>Bypass</dt><dd><p>The colored logo of the plug-in is also a bypass button to disable
+the effect in the signal chain.</p>
+</dd>
+<dt>Undo/Redo</dt><dd><p>With these buttons the last step can be undone and an undone step can
+be restored.</p>
+</dd>
+<dt>Save Preset</dt><dd><p>Über diesen Knopf können eigene/individuelle Presets gespeichert
+werden.</p>
+</dd>
+<dt>Settings</dt><dd><p>Here you can find the technical settings to personalize the software.</p>
+</dd>
+<dt>Sidechain Input</dt><dd><p>All plug-ins of the ASIC Bundle have an additional audio input for a
+sidechain signal. This button takes you to the input processing of
+this signal.</p>
+</dd>
+<dt>Modulation</dt><dd><p>The modulation matrix of the ASIC bundle is accessible via this menu.
+Three different modulators are available, which can be placed on
+parameters in the main UI by drag’n’drop. Detailed information about
+the modulators can be found at modern-circuits.com/support.</p>
+</dd>
+<dt>Output Volumen</dt><dd><p>After the signal has been processed by the audio effect, this slider
+allows you to adjust the volume that the plug-in sends back to the
+DAW. It works identically to the input volume slider, but at the
+other end of the signal flow.</p>
+</dd>
+</dl>
 </section>
 <section id="vlcd">
-<h2>VLCD<a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
-<p>The VLCD shows the current status of the PlugIn or the current edit menu.</p>
-<ul class="simple">
-<li><p><strong>Audio FX</strong> - This page shows the current status of the compression. On the left is a histogram showing the compression of past peaks for comparison with the current value. In the middle is the gain reduction meter and the expander switch. On the right side is an input/output diagram showing the threshold and ratio. The soft knee function can also be read here.</p></li>
-<li><p><strong>Preset page</strong> - This page shows all available presets. In the left column is the name, on the right side the name of the parent bank. In the upper part there are two icons. The heart icon can be used to mark presets as favorites. The symbol with the crossing arrows activates a shuffle mode.</p></li>
-<li><p><strong>Sidechain Input</strong> - On this page the incoming sidechain signal is edited. A gain/attenuator and a filter with high/low cut and peak are available for this purpose.</p></li>
-<li><p><strong>Settings</strong> - The settings of the plugin can be found here. Settings - The settings of the plugin can be found here.</p></li>
-<li><p><strong>Envelope modulator</strong> - On this page an envelope can be configured as a modulator for a parameter on the Main UI. More information about this is available on <a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a>.</p></li>
-<li><p><strong>LFO modulator</strong> - On this page an LFO can be configured as a modulator for a parameter on the Main UI. More information about this is available on <a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a></p></li>
-<li><p><strong>Sequencer modulator</strong> - On this page a sequencer can be configured as a modulator for a parameter on the Main UI. More information about this is available on <a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a>.</p></li>
-</ul>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">VLCD</a><a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
+<p>The VLCD shows the current status of the PlugIn or the current edit
+menu.</p>
+<dl class="simple">
+<dt>Audio FX</dt><dd><p>This page shows the current status of the compression. On the left is
+a histogram showing the compression of past peaks for comparison with
+the current value. In the middle is the gain reduction meter and the
+expander switch. On the right side is an input/output diagram showing
+the threshold and ratio. The soft knee function can also be read
+here.</p>
+</dd>
+<dt>Preset page</dt><dd><p>This page shows all available presets. In the left column is the
+name, on the right side the name of the parent bank. In the upper
+part there are two icons. The heart icon can be used to mark presets
+as favorites. The symbol with the crossing arrows activates a shuffle
+mode.</p>
+</dd>
+<dt>Sidechain Input</dt><dd><p>On this page the incoming sidechain signal is edited. A
+gain/attenuator and a filter with high/low cut and peak are available
+for this purpose.</p>
+</dd>
+<dt>Settings</dt><dd><p>The settings of the plugin can be found here.</p>
+</dd>
+<dt>Envelope modulator</dt><dd><p>On this page an envelope can be configured as a modulator for a
+parameter on the Main UI. More information about this is available on
+<a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a>.</p>
+</dd>
+<dt>LFO modulator</dt><dd><p>On this page an LFO can be configured as a modulator for a parameter
+on the Main UI. More information about this is available on
+<a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a>.</p>
+</dd>
+<dt>Sequencer modulator</dt><dd><p>On this page a sequencer can be configured as a modulator for a
+parameter on the Main UI. More information about this is available on
+<a class="reference external" href="https://modern-circuits.com/support/modualtion-manual">modern-circuits.com/support/modualtion-manual</a>.</p>
+</dd>
+</dl>
 </section>
 <section id="main-ui">
-<h2>Main UI<a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Main UI</a><a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p>Parameter</p></th>
-<th class="head text-center"><p>Funktion</p></th>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Function</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-center"><p>Expander</p></td>
-<td class="text-center"><p>The threshold, ratio, attack, release and soft knee parameters and visualizations on the VLCD now map the expander.</p></td>
+<tr class="row-even"><td><p>Expander</p></td>
+<td><p>The threshold, ratio, attack, release and soft knee parameters and visualizations on the VLCD now map the expander.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Threshold</p></td>
-<td class="text-center"><p>Set the threshold at which the compressor/expander starts working. The compressor processes the dynamic range above its threshold, the expander does so below it.</p></td>
+<tr class="row-odd"><td><p>Threshold</p></td>
+<td><p>Set the threshold at which the compressor/expander starts working. The compressor processes the dynamic range above its threshold, the expander does so below it.</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Ratio</p></td>
-<td class="text-center"><p>Determine the reduction ratio when the threshold is exceeded or undershot.</p></td>
+<tr class="row-even"><td><p>Ratio</p></td>
+<td><p>Determine the reduction ratio when the threshold is exceeded or undershot.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Attack</p></td>
-<td class="text-center"><p>Determine the time needed to react to the threshold crossing.</p></td>
+<tr class="row-odd"><td><p>Attack</p></td>
+<td><p>Determine the time needed to react to the threshold crossing.</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Release</p></td>
-<td class="text-center"><p>Determine the time it takes for the effect to return to its normal state.</p></td>
+<tr class="row-even"><td><p>Release</p></td>
+<td><p>Determine the time it takes for the effect to return to its normal state.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Soft Knee</p></td>
-<td class="text-center"><p>Determine how fast the set compression takes effect after the threshold has been exceeded.</p></td>
+<tr class="row-odd"><td><p>Soft Knee</p></td>
+<td><p>Determine how fast the set compression takes effect after the threshold has been exceeded.</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Sidechain Input</p></td>
-<td class="text-center"><p>Adjust the input level of the external sidechain signal.</p></td>
+<tr class="row-even"><td><p>Sidechain Input</p></td>
+<td><p>Adjust the input level of the external sidechain signal.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Expander Sync</p></td>
-<td class="text-center"><p>Sets the threshold of the expander equal to that of the compressor.</p></td>
+<tr class="row-odd"><td><p>Expander Sync</p></td>
+<td><p>Sets the threshold of the expander equal to that of the compressor.</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Filter</p></td>
-<td class="text-center"><p>Activate the filter to filter the external sidechain signal before it is processed further.</p></td>
+<tr class="row-even"><td><p>Filter</p></td>
+<td><p>Activate the filter to filter the external sidechain signal before it is processed further.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Filter/Slider</p></td>
-<td class="text-center"><p>Set the frequency of the sidechain filter</p></td>
+<tr class="row-odd"><td><p>Filter/Slider</p></td>
+<td><p>Set the frequency of the sidechain filter</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Make Up</p></td>
-<td class="text-center"><p>Compensates the compressed volume</p></td>
+<tr class="row-even"><td><p>Make Up</p></td>
+<td><p>Compensates the compressed volume</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Dry/Wet</p></td>
-<td class="text-center"><p>Here the ratio of the processed signal with the original signal is processed. For example, for parallel compression.</p></td>
+<tr class="row-odd"><td><p>Dry/Wet</p></td>
+<td><p>Here the ratio of the processed signal with the original signal is processed. For example, for parallel compression.</p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>Auto Gain</p></td>
-<td class="text-center"><p>When activated, the signal is amplified by a level resulting from the ratio of ratio and threshold.</p></td>
+<tr class="row-even"><td><p>Auto Gain</p></td>
+<td><p>When activated, the signal is amplified by a level resulting from the ratio of ratio and threshold.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading"></a></h2>
-<p>We hope we could make the ASIC Dynamic PlugIn understandable with this documentation. Further information is available in our FAQ at <a class="reference external" href="https://modern-circuits.com/support">modern-circuits.com/support</a>. Here you can also find email addresses to contact us.</p>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Additional Resources</a><a class="headerlink" href="#additional-resources" title="Permalink to this heading"></a></h2>
+<p>We hope we could make the ASIC Dynamic PlugIn understandable with this
+documentation. Further information is available in our FAQ at
+<a class="reference external" href="https://modern-circuits.com/support">modern-circuits.com/support</a>. Here you can also find email addresses
+to contact us.</p>
 </section>
 </section>
 
