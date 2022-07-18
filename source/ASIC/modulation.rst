@@ -2,6 +2,9 @@
  Modulation
 ############
 
+.. contents::
+   :local:
+
 .. literalinclude:: snippets/test.cpp
    :language: cpp
 

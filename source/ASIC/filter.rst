@@ -2,6 +2,9 @@
  Filter
 ########
 
+.. contents::
+   :local:
+
 The **ASIC Filter PlugIn** is a digital audio effect for equalizing and
 balancing the frequency characteristics of an audio signal. With five
 filter bands, you can intervene in any frequency range between 20 Hz -

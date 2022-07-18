@@ -2,6 +2,9 @@
  Overview
 ##########
 
+.. contents::
+   :local:
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt
 sem non metus ultricies aliquam. Duis in magna varius, accumsan mi ut,
 mollis dui. Maecenas scelerisque vel massa at pulvinar. Aliquam tempus

@@ -2,6 +2,9 @@
  Dynamic
 #########
 
+.. contents::
+   :local:
+
 The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and
 dynamic range of an audio signal. It combines the traditional audio
 effects compressor and expander. In this manual you will learn about the
@@ -11,18 +14,21 @@ On our website modern-circuits.com you will find the manuals of all ASIC
 PlugIns on the "Support" page as well as separate manuals for the
 installation and the modulation matrix.
 
-Usage
-   The ASIC Dynamic PlugIn is a combination of a compressor and an
-   expander, both controllable via the same user interface. The VLCD
-   graphically displays the current and past compression level. A
-   display shows the gain reduction in decibels (dB). With a click on
-   the expander button in the VLCD, the expander can be operated in the
-   main UI. At the output, an auto gain function is available to balance
-   the level. There is also a sidechain function.
-
 .. image:: https://modern-circuits.com/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png
    :align: center
    :alt: ASIC Dynamic Screenhot
+
+*******
+ Usage
+*******
+
+The ASIC Dynamic PlugIn is a combination of a compressor and an
+expander, both controllable via the same user interface. The VLCD
+graphically displays the current and past compression level. A display
+shows the gain reduction in decibels (dB). With a click on the expander
+button in the VLCD, the expander can be operated in the main UI. At the
+output, an auto gain function is available to balance the level. There
+is also a sidechain function.
 
 *********
  Top Bar
