@@ -2,9 +2,6 @@
  Tone
 ######
 
-.. contents::
-   :local:
-
 The ASIC Tone PlugIn is a digital audio effect for technically adjusting
 an atonal audio signal using a filter bank. It can be interpreted as a
 frequency-based tuner and influences the linear or natural harmonic

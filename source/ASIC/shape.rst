@@ -2,9 +2,6 @@
  Shape
 #######
 
-.. contents::
-   :local:
-
 The ASIC Shape PlugIn is a digital audio effect for creating artificial
 harmonics and distortion. Through various algorithms, a range of
 different distortion effects can be applied to the signal. In this
@@ -30,7 +27,7 @@ filters, an envelope follower and a transient designer are available.
 These effects can be adjusted to the input signal and the mix via the
 Main UI.
 
-Algorithems
+Algorithms
 ===========
 
 Saturation

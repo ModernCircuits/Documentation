@@ -2,9 +2,6 @@
  Space
 #######
 
-.. contents::
-   :local:
-
 The ASIC Space PlugIn is a digital audio effect for creating artificial
 space, reverberation and delay. It is a combination of two traditional
 audio effects (reverb and delay) and offers the possibility to match
