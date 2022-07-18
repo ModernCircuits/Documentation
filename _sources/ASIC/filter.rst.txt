@@ -2,9 +2,6 @@
  Filter
 ########
 
-.. contents::
-   :local:
-
 The **ASIC Filter PlugIn** is a digital audio effect for equalizing and
 balancing the frequency characteristics of an audio signal. With five
 filter bands, you can intervene in any frequency range between 20 Hz -
@@ -50,18 +47,21 @@ found on modern-circuits.com/support in the manual ASIC Modulations.
 | Band Features      | Filtertype - Solo - Mute                            |
 +--------------------+-----------------------------------------------------+
 
-Top Bar
-=======
+*********
+ Top Bar
+*********
 
 .. include:: section/top_bar.rstinc
 
-VLCD
-====
+******
+ VLCD
+******
 
 .. include:: section/vlcd.rstinc
 
-Main UI
-=======
+*********
+ Main UI
+*********
 
 Frequency
    Determine the frequency to be processed.
@@ -87,7 +87,8 @@ Type
 Q
    Set the quality/width of a band.
 
-Additional Resources
-====================
+**********************
+ Additional Resources
+**********************
 
 .. include:: section/additional_resources.rstinc

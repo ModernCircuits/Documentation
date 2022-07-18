@@ -88,15 +88,6 @@
              
   <section id="dynamic">
 <h1>Dynamic<a class="headerlink" href="#dynamic" title="Permalink to this heading"></a></h1>
-<nav class="contents local" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#usage" id="id1">Usage</a></p></li>
-<li><p><a class="reference internal" href="#top-bar" id="id2">Top Bar</a></p></li>
-<li><p><a class="reference internal" href="#vlcd" id="id3">VLCD</a></p></li>
-<li><p><a class="reference internal" href="#main-ui" id="id4">Main UI</a></p></li>
-<li><p><a class="reference internal" href="#additional-resources" id="id5">Additional Resources</a></p></li>
-</ul>
-</nav>
 <p>The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and
 dynamic range of an audio signal. It combines the traditional audio
 effects compressor and expander. In this manual you will learn about the
@@ -106,7 +97,7 @@ PlugIns on the “Support” page as well as separate manuals for the
 installation and the modulation matrix.</p>
 <img alt="ASIC Dynamic Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png" />
 <section id="usage">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
 <p>The ASIC Dynamic PlugIn is a combination of a compressor and an
 expander, both controllable via the same user interface. The VLCD
 graphically displays the current and past compression level. A display
@@ -116,7 +107,7 @@ output, an auto gain function is available to balance the level. There
 is also a sidechain function.</p>
 </section>
 <section id="top-bar">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Top Bar</a><a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
+<h2>Top Bar<a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
 <p>The Top Bar has various functions. The following table lists the
 controls available on the user interface from left to right.</p>
 <dl class="simple">
@@ -157,7 +148,7 @@ other end of the signal flow.</p>
 </dl>
 </section>
 <section id="vlcd">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">VLCD</a><a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
+<h2>VLCD<a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
 <p>The VLCD shows the current status of the PlugIn or the current edit
 menu.</p>
 <dl class="simple">
@@ -195,58 +186,47 @@ parameter on the Main UI. More information about this is available on
 </dl>
 </section>
 <section id="main-ui">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Main UI</a><a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Parameter</p></th>
-<th class="head"><p>Function</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Expander</p></td>
-<td><p>The threshold, ratio, attack, release and soft knee parameters and visualizations on the VLCD now map the expander.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Threshold</p></td>
-<td><p>Set the threshold at which the compressor/expander starts working. The compressor processes the dynamic range above its threshold, the expander does so below it.</p></td>
-</tr>
-<tr class="row-even"><td><p>Ratio</p></td>
-<td><p>Determine the reduction ratio when the threshold is exceeded or undershot.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Attack</p></td>
-<td><p>Determine the time needed to react to the threshold crossing.</p></td>
-</tr>
-<tr class="row-even"><td><p>Release</p></td>
-<td><p>Determine the time it takes for the effect to return to its normal state.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Soft Knee</p></td>
-<td><p>Determine how fast the set compression takes effect after the threshold has been exceeded.</p></td>
-</tr>
-<tr class="row-even"><td><p>Sidechain Input</p></td>
-<td><p>Adjust the input level of the external sidechain signal.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Expander Sync</p></td>
-<td><p>Sets the threshold of the expander equal to that of the compressor.</p></td>
-</tr>
-<tr class="row-even"><td><p>Filter</p></td>
-<td><p>Activate the filter to filter the external sidechain signal before it is processed further.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Filter/Slider</p></td>
-<td><p>Set the frequency of the sidechain filter</p></td>
-</tr>
-<tr class="row-even"><td><p>Make Up</p></td>
-<td><p>Compensates the compressed volume</p></td>
-</tr>
-<tr class="row-odd"><td><p>Dry/Wet</p></td>
-<td><p>Here the ratio of the processed signal with the original signal is processed. For example, for parallel compression.</p></td>
-</tr>
-<tr class="row-even"><td><p>Auto Gain</p></td>
-<td><p>When activated, the signal is amplified by a level resulting from the ratio of ratio and threshold.</p></td>
-</tr>
-</tbody>
-</table>
+<h2>Main UI<a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>Expander</dt><dd><p>The threshold, ratio, attack, release and soft knee parameters and
+visualizations on the VLCD now map the expander.</p>
+</dd>
+<dt>Threshold</dt><dd><p>Set the threshold at which the compressor/expander starts working.
+The compressor processes the dynamic range above its threshold, the
+expander does so below it.</p>
+</dd>
+<dt>Ratio</dt><dd><p>Determine the reduction ratio when the threshold is exceeded or
+undershot.</p>
+</dd>
+<dt>Attack</dt><dd><p>Determine the time needed to react to the threshold crossing.</p>
+</dd>
+<dt>Release</dt><dd><p>Determine the time it takes for the effect to return to its normal
+state.</p>
+</dd>
+<dt>Soft Knee</dt><dd><p>Determine how fast the set compression takes effect after the
+threshold has been exceeded.</p>
+</dd>
+<dt>Sidechain Input</dt><dd><p>Adjust the input level of the external sidechain signal.</p>
+</dd>
+<dt>Expander Sync</dt><dd><p>Sets the threshold of the expander equal to that of the compressor.</p>
+</dd>
+<dt>Filter</dt><dd><p>Activate the filter to filter the external sidechain signal before it
+is processed further.</p>
+</dd>
+<dt>Filter/Slider</dt><dd><p>Set the frequency of the sidechain filter</p>
+</dd>
+<dt>Make Up</dt><dd><p>Compensates the compressed volume</p>
+</dd>
+<dt>Dry/Wet</dt><dd><p>Here the ratio of the processed signal with the original signal is
+processed. For example, for parallel compression.</p>
+</dd>
+<dt>Auto Gain</dt><dd><p>When activated, the signal is amplified by a level resulting from the
+ratio of ratio and threshold.</p>
+</dd>
+</dl>
 </section>
 <section id="additional-resources">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Additional Resources</a><a class="headerlink" href="#additional-resources" title="Permalink to this heading"></a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading"></a></h2>
 <p>We hope we could make the ASIC Dynamic PlugIn understandable with this
 documentation. Further information is available in our FAQ at
 <a class="reference external" href="https://modern-circuits.com/support">modern-circuits.com/support</a>. Here you can also find email addresses

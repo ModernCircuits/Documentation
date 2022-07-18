@@ -2,9 +2,6 @@
  Dynamic
 #########
 
-.. contents::
-   :local:
-
 The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and
 dynamic range of an audio signal. It combines the traditional audio
 effects compressor and expander. In this manual you will learn about the
@@ -46,35 +43,53 @@ is also a sidechain function.
  Main UI
 *********
 
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Parameter       | Function                                                                                                                                                          |
-+=================+===================================================================================================================================================================+
-| Expander        | The threshold, ratio, attack, release and soft knee parameters and visualizations on the VLCD now map the expander.                                               |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Threshold       | Set the threshold at which the compressor/expander starts working. The compressor processes the dynamic range above its threshold, the expander does so below it. |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Ratio           | Determine the reduction ratio when the threshold is exceeded or undershot.                                                                                        |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Attack          | Determine the time needed to react to the threshold crossing.                                                                                                     |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Release         | Determine the time it takes for the effect to return to its normal state.                                                                                         |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Soft Knee       | Determine how fast the set compression takes effect after the threshold has been exceeded.                                                                        |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Sidechain Input | Adjust the input level of the external sidechain signal.                                                                                                          |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Expander Sync   | Sets the threshold of the expander equal to that of the compressor.                                                                                               |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Filter          | Activate the filter to filter the external sidechain signal before it is processed further.                                                                       |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Filter/Slider   | Set the frequency of the sidechain filter                                                                                                                         |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Make Up         | Compensates the compressed volume                                                                                                                                 |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Dry/Wet         | Here the ratio of the processed signal with the original signal is processed. For example, for parallel compression.                                              |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Auto Gain       | When activated, the signal is amplified by a level resulting from the ratio of ratio and threshold.                                                               |
-+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Expander
+   The threshold, ratio, attack, release and soft knee parameters and
+   visualizations on the VLCD now map the expander.
+
+Threshold
+   Set the threshold at which the compressor/expander starts working.
+   The compressor processes the dynamic range above its threshold, the
+   expander does so below it.
+
+Ratio
+   Determine the reduction ratio when the threshold is exceeded or
+   undershot.
+
+Attack
+   Determine the time needed to react to the threshold crossing.
+
+Release
+   Determine the time it takes for the effect to return to its normal
+   state.
+
+Soft Knee
+   Determine how fast the set compression takes effect after the
+   threshold has been exceeded.
+
+Sidechain Input
+   Adjust the input level of the external sidechain signal.
+
+Expander Sync
+   Sets the threshold of the expander equal to that of the compressor.
+
+Filter
+   Activate the filter to filter the external sidechain signal before it
+   is processed further.
+
+Filter/Slider
+   Set the frequency of the sidechain filter
+
+Make Up
+   Compensates the compressed volume
+
+Dry/Wet
+   Here the ratio of the processed signal with the original signal is
+   processed. For example, for parallel compression.
+
+Auto Gain
+   When activated, the signal is amplified by a level resulting from the
+   ratio of ratio and threshold.
 
 **********************
  Additional Resources
