@@ -1,8 +1,10 @@
-sphinx
-myst-parser
-sphinx-rtd-theme
-furo
-sphinx-redactor-theme
-sphinx-sizzle-theme
 
 autopep8
+furo
+myst-parser
+pre-commit
+sphinx
+sphinx-intl
+sphinx-redactor-theme
+sphinx-rtd-theme
+sphinx-sizzle-theme
