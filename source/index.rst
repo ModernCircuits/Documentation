@@ -27,5 +27,5 @@ fringilla est.
    :maxdepth: 2
    :caption: Contents
 
-   Zentrale/index
-   ASIC/index
+   zentrale/index
+   asic/index
