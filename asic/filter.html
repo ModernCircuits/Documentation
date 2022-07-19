@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tone &mdash; Modern Circuits  documentation</title>
+  <title>Filter &mdash; Modern Circuits  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Space" href="space.html" /> 
+    <link rel="next" title="Shape" href="shape.html" />
+    <link rel="prev" title="Dynamic" href="dynamic.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,15 +41,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Zentrale/index.html">Zentrale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zentrale/index.html">Zentrale</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">ASIC</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modulation.html">Modulation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamic.html">Dynamic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="filter.html">Filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
-<li class="toctree-l2"><a class="reference internal" href="space.html">Space</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Tone</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Filter</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#top-bar">Top Bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vlcd">VLCD</a></li>
@@ -56,6 +54,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space.html">Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tone.html">Tone</a></li>
 </ul>
 </li>
 </ul>
@@ -75,9 +76,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">ASIC</a> &raquo;</li>
-      <li>Tone</li>
+      <li>Filter</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/ASIC/tone.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/asic/filter.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -85,24 +86,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tone">
-<h1>Tone<a class="headerlink" href="#tone" title="Permalink to this heading"></a></h1>
-<p>The ASIC Tone PlugIn is a digital audio effect for technically adjusting
-an atonal audio signal using a filter bank. It can be interpreted as a
-frequency-based tuner and influences the linear or natural harmonic
-spectrum. In this tutorial you will learn which functions the ASIC Tone
-audio effect has and how to use them.</p>
-<p>On our website modern-circuits.com you will find the manuals of all ASIC
-PlugIns on the “Support” page as well as separate manuals for the
+  <section id="filter">
+<h1>Filter<a class="headerlink" href="#filter" title="Permalink to this heading"></a></h1>
+<p>The <strong>ASIC Filter PlugIn</strong> is a digital audio effect for equalizing and
+balancing the frequency characteristics of an audio signal. With five
+filter bands, you can intervene in any frequency range between 20 Hz -
+20,000 Hz. In this tutorial you will learn which functions the ASIC
+Filter audio effect has and how to use them.</p>
+<p>On our website modern-circuits.com you will find the manuals of <strong>all
+ASIC PlugIns</strong> on the “Support” page as well as separate manuals for the
 installation and the modulation matrix.</p>
-<img alt="ASIC Tone Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_tone_screenshot_small.5b1fae143a47a6cb4a98.png" />
+<img alt="ASIC Filter Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_filter_screenshot_small.5d8ecba1df7cd652685c.png" />
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
-<p>ASIC Tone can be used to quickly edit frequency bands that belong
-together. The basis is either a diatonic note or a freely selectable
-fundamental frequency. Based on this base, the plug-in calculates the
-associated harmonics and automatically sets filter bands. These can be
-changed by the Main UI in their volume, their Q-factor and their number.</p>
+<p>The ASIC Filter PlugIn is an equalizer with five bands. Its cutoff
+frequencies are 20 Hz in the low-frequency range and 20,000 Hz in the
+high-frequency range. Frequency ranges can be changed in volume between
+-12db to +12db. Three of the five bands are available via the MAIN UI,
+and two can be unlocked via the VLCD. Five different filter curves are
+available per band. High- and Lowcut are available with a -12db/octave
+slope as well as with in a -24db/octave and are controllable via
+Rotary/Slider as well as directly on the VLCD. With the modulation
+matrix, almost every parameter can be automated. Info about this can be
+found on modern-circuits.com/support in the manual ASIC Modulations.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Spec</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>EQ Bands</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Frequency spectrum</p></td>
+<td><p>20 Hz - 20.000 Hz</p></td>
+</tr>
+<tr class="row-even"><td><p>Filter types</p></td>
+<td><p>Lowcut - Lowshelf - Peak/Bell - Highshelf - Highcut</p></td>
+</tr>
+<tr class="row-odd"><td><p>Slope</p></td>
+<td><p>-12db/O;-24db/O</p></td>
+</tr>
+<tr class="row-even"><td><p>Gain</p></td>
+<td><p>-12db bis +12db</p></td>
+</tr>
+<tr class="row-odd"><td><p>Band Features</p></td>
+<td><p>Filtertype - Solo - Mute</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="top-bar">
 <h2>Top Bar<a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
@@ -147,9 +180,6 @@ other end of the signal flow.</p>
 </section>
 <section id="vlcd">
 <h2>VLCD<a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
-<p>Diese Seite zeigt den aktuellen Status des Effekts. Grundlage ist ein
-Frequenzspektrum von 20Hz bis 20kHz. Das Frequenzspektrum den
-Ankommenden Signals wird in Echtzeit dargestellt.</p>
 <p>The VLCD shows the current status of the PlugIn or the current edit
 menu.</p>
 <dl class="simple">
@@ -189,25 +219,25 @@ parameter on the Main UI. More information about this is available on
 <section id="main-ui">
 <h2>Main UI<a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
 <dl class="simple">
-<dt>Note/Frequency</dt><dd><p>This is the basis of the plug-in’s processing. Note describes the
-frequency of one of the 12 tones from F - E. Frequency cancels the
-scaling in diatonic frequencies and lets you freely determine any
-frequency.</p>
+<dt>Frequency</dt><dd><p>Determine the frequency to be processed.</p>
 </dd>
-<dt>Intensity</dt><dd><p>Here the gain of all generated bands is controlled. Here it can be
-amplified but also lowered.</p>
+<dt>Solo</dt><dd><p>Mute all other bands.</p>
 </dd>
-<dt>Mode</dt><dd><p>Here there is the possibility to switch between a linear and the
-natural overtone spectrum.</p>
+<dt>Bypass</dt><dd><p>Mute/bypass this band.</p>
 </dd>
-<dt>Clarity</dt><dd><p>Clarity edits the quality of the individual bands.</p>
+<dt>Gain</dt><dd><p>Set the gain of this frequency band (-12db - +12db)</p>
 </dd>
-<dt>Resolution</dt><dd><p>This sets the number of overtones that match the root note.</p>
+<dt>Type</dt><dd><ul class="simple">
+<li><p>Lowcut (Slope: -24/db per octave)</p></li>
+<li><p>Lowcut (Slope: -12/db per octave)</p></li>
+<li><p>Lowshelf</p></li>
+<li><p>Peak/Bell Filter</p></li>
+<li><p>Highshelf</p></li>
+<li><p>Highcut (Slope: -12/db per octave)</p></li>
+<li><p>Highcut (Slope: -24/db per octave)</p></li>
+</ul>
 </dd>
-<dt>Octave</dt><dd><p>Here the root note can be shifted in the octave.</p>
-</dd>
-<dt>Dry/Wet</dt><dd><p>Here the ratio of the processed signal with the original signal is
-processed.</p>
+<dt>Q</dt><dd><p>Set the quality/width of a band.</p>
 </dd>
 </dl>
 </section>
@@ -224,7 +254,8 @@ to contact us.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="space.html" class="btn btn-neutral float-left" title="Space" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dynamic.html" class="btn btn-neutral float-left" title="Dynamic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shape.html" class="btn btn-neutral float-right" title="Shape" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

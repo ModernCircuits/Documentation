@@ -28,7 +28,7 @@ These effects can be adjusted to the input signal and the mix via the
 Main UI.
 
 Algorithms
-===========
+==========
 
 Saturation
    Increase saturation by slight distortion.

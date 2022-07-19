@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic &mdash; Modern Circuits  documentation</title>
+  <title>Shape &mdash; Modern Circuits  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Filter" href="filter.html" />
-    <link rel="prev" title="Modulation" href="modulation.html" /> 
+    <link rel="next" title="Space" href="space.html" />
+    <link rel="prev" title="Filter" href="filter.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,20 +41,23 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../Zentrale/index.html">Zentrale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zentrale/index.html">Zentrale</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">ASIC</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modulation.html">Modulation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Dynamic</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic.html">Dynamic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Shape</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#algorithms">Algorithms</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#top-bar">Top Bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#vlcd">VLCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#main-ui">Main UI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="filter.html">Filter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shape.html">Shape</a></li>
 <li class="toctree-l2"><a class="reference internal" href="space.html">Space</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tone.html">Tone</a></li>
 </ul>
@@ -76,9 +79,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">ASIC</a> &raquo;</li>
-      <li>Dynamic</li>
+      <li>Shape</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/ASIC/dynamic.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/asic/shape.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -86,25 +89,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="dynamic">
-<h1>Dynamic<a class="headerlink" href="#dynamic" title="Permalink to this heading"></a></h1>
-<p>The ASIC Dynamic PlugIn is a digital audio effect to edit the volume and
-dynamic range of an audio signal. It combines the traditional audio
-effects compressor and expander. In this manual you will learn about the
-functions of the ASIC Dynamic Audio Effect and how to use them.</p>
-<p>On our website modern-circuits.com you will find the manuals of all ASIC
-PlugIns on the “Support” page as well as separate manuals for the
+  <section id="shape">
+<h1>Shape<a class="headerlink" href="#shape" title="Permalink to this heading"></a></h1>
+<p>The ASIC Shape PlugIn is a digital audio effect for creating artificial
+harmonics and distortion. Through various algorithms, a range of
+different distortion effects can be applied to the signal. In this
+tutorial you will learn about the functions of the ASIC Shape audio
+effect and how to use them.</p>
+<p>On our website modern-circuits.com you will find the manuals of <strong>all
+ASIC PlugIns</strong> on the “Support” page as well as separate manuals for the
 installation and the modulation matrix.</p>
-<img alt="ASIC Dynamic Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png" />
+<img alt="ASIC Shape Screenhot" class="align-center" src="https://modern-circuits.com/static/media/asic_shape_screenshot_small.803961c9dbc798e8ce75.png" />
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
-<p>The ASIC Dynamic PlugIn is a combination of a compressor and an
-expander, both controllable via the same user interface. The VLCD
-graphically displays the current and past compression level. A display
-shows the gain reduction in decibels (dB). With a click on the expander
-button in the VLCD, the expander can be operated in the main UI. At the
-output, an auto gain function is available to balance the level. There
-is also a sidechain function.</p>
+<p>The ASIC Shape can be used to artificially distort a signal. To make the
+processing as detailed as possible, various processing tools are
+available. Besides the selection of one of the 10 algorithms, two
+filters, an envelope follower and a transient designer are available.
+These effects can be adjusted to the input signal and the mix via the
+Main UI.</p>
+<section id="algorithms">
+<h3>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Saturation</dt><dd><p>Increase saturation by slight distortion.</p>
+</dd>
+<dt>Brickwall</dt><dd><p>Classic clip distortion that cuts the waveform hard.</p>
+</dd>
+<dt>Sine</dt><dd><p>Classic distortion by the sine function.</p>
+</dd>
+<dt>Tan</dt><dd><p>Classic distortion by the tangent function.</p>
+</dd>
+<dt>Reversed Brickwall</dt><dd><p>Classic clip distortion that negatively flips down all values above
+the clip threshold.</p>
+</dd>
+<dt>Floor</dt><dd><p>Classic clip distortion, which maps all values above the clip
+threshold offset from the zero line.</p>
+</dd>
+<dt>Anti-Saturation</dt><dd><p>Boosts already loud samples and reduces quiet samples.</p>
+</dd>
+<dt>Rectify</dt><dd><p>Sets all samples to positive values</p>
+</dd>
+<dt>Aliasing</dt><dd><p>Classic reduction of the sample rate</p>
+</dd>
+<dt>Modulo</dt><dd><p>Uses the mathematical calculation operation “Modulo” to modify the
+wave</p>
+</dd>
+</dl>
+</section>
 </section>
 <section id="top-bar">
 <h2>Top Bar<a class="headerlink" href="#top-bar" title="Permalink to this heading"></a></h2>
@@ -149,6 +180,11 @@ other end of the signal flow.</p>
 </section>
 <section id="vlcd">
 <h2>VLCD<a class="headerlink" href="#vlcd" title="Permalink to this heading"></a></h2>
+<p>This page shows the current status of the compression. On the left is a
+histogram showing the compression of past peaks for comparison with the
+current value. In the middle is the gain reduction meter and the
+expander switch. On the right side is an input/output diagram showing
+the threshold and ratio. The soft knee function can also be read here.</p>
 <p>The VLCD shows the current status of the PlugIn or the current edit
 menu.</p>
 <dl class="simple">
@@ -188,40 +224,43 @@ parameter on the Main UI. More information about this is available on
 <section id="main-ui">
 <h2>Main UI<a class="headerlink" href="#main-ui" title="Permalink to this heading"></a></h2>
 <dl class="simple">
-<dt>Expander</dt><dd><p>The threshold, ratio, attack, release and soft knee parameters and
-visualizations on the VLCD now map the expander.</p>
+<dt>Drive</dt><dd><p>Determine how much influence the distortion has on the original
+signal.</p>
 </dd>
-<dt>Threshold</dt><dd><p>Set the threshold at which the compressor/expander starts working.
-The compressor processes the dynamic range above its threshold, the
-expander does so below it.</p>
+<dt>Trim</dt><dd><p>Adjust the volume of the distorted signal.</p>
 </dd>
-<dt>Ratio</dt><dd><p>Determine the reduction ratio when the threshold is exceeded or
-undershot.</p>
+<dt>Select</dt><dd><p>Here is the selection of the different distortion algorithms.</p>
 </dd>
-<dt>Attack</dt><dd><p>Determine the time needed to react to the threshold crossing.</p>
+<dt>Pre/Post</dt><dd><p>The plug-in comes with two filters that are placed at different
+points in the signal chain: The Pre Filter before the distortion
+(Input Signal) - the Post Filter after the distortion (Output
+Signal). With these buttons you can switch between the filters. The
+following parameters (Cutoff/Filter Curves and Q) adjust to this
+selection.</p>
 </dd>
-<dt>Release</dt><dd><p>Determine the time it takes for the effect to return to its normal
-state.</p>
+<dt>Cutoff</dt><dd><p>Adjust the crossover frequency at which the filter starts filtering.</p>
 </dd>
-<dt>Soft Knee</dt><dd><p>Determine how fast the set compression takes effect after the
-threshold has been exceeded.</p>
+<dt>Filterkurven</dt><dd><p>Choose from three different filter curves. High pass, low pass and
+bell band.</p>
 </dd>
-<dt>Sidechain Input</dt><dd><p>Adjust the input level of the external sidechain signal.</p>
+<dt>Q</dt><dd><p>Adjust the quality of the filter.</p>
 </dd>
-<dt>Expander Sync</dt><dd><p>Sets the threshold of the expander equal to that of the compressor.</p>
+<dt>Follow</dt><dd><p>This is an envelope follower that can modulate the pre-filter based
+on the envelope of the input signal. “Follow” controls the intensity
+with the envelope mapping in the filter movement.</p>
 </dd>
-<dt>Filter</dt><dd><p>Activate the filter to filter the external sidechain signal before it
-is processed further.</p>
+<dt>Attack</dt><dd><p>Controls how fast the pre-filter reacts to an input signal.</p>
 </dd>
-<dt>Filter/Slider</dt><dd><p>Set the frequency of the sidechain filter</p>
+<dt>Release</dt><dd><p>Controls how long the pre-filter takes to return to its original
+position after modulation by the envelope follower.</p>
 </dd>
-<dt>Make Up</dt><dd><p>Compensates the compressed volume</p>
+<dt>Transient Attack</dt><dd><p>Here the volume of the transients can be raised or lowered.</p>
 </dd>
-<dt>Dry/Wet</dt><dd><p>Here the ratio of the processed signal with the original signal is
-processed. For example, for parallel compression.</p>
+<dt>Transient Sustain</dt><dd><p>Here you can raise or lower the volume of the signal behind the
+transients.</p>
 </dd>
-<dt>Auto Gain</dt><dd><p>When activated, the signal is amplified by a level resulting from the
-ratio of ratio and threshold.</p>
+<dt>Dry/Wet</dt><dd><p>Dry/Wet determines the ratio of processed and unprocessed signal at
+the output.</p>
 </dd>
 </dl>
 </section>
@@ -238,8 +277,8 @@ to contact us.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="modulation.html" class="btn btn-neutral float-left" title="Modulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="filter.html" class="btn btn-neutral float-right" title="Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="filter.html" class="btn btn-neutral float-left" title="Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="space.html" class="btn btn-neutral float-right" title="Space" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
